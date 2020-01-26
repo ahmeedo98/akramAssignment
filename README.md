@@ -1,5 +1,5 @@
-# SYLC-POC
-Proof Of Concept for SYLC - a React Native app which shows local businesses near you
+# akramAssignment
+akramAssignment - a React Native app which shows nice spots near you
 
 ## Pre-requisites
 - MacOS/Windows: Node version 12.9.0 is used, newer version created issues, any problems with running expo may be due to this.
