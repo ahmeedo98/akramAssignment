@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Animated, Image, Text } from 'react-native';
+import { View, Animated, Image, Text, TouchableOpacity } from 'react-native';
 import '../../../global';
 import styles from '../../../styles/homestyle';
 
@@ -25,8 +25,9 @@ const MapCards = animation => (
     contentContainerStyle={styles.endPadding}
   >
     <View style={styles.card}>
-    <Image source={require('./img/pic1.png')} style={styles.cardImage}  />
+      <Image source={{ uri: 'https://i.imgur.com/sNam9iJ.jpg' }} style={styles.cardImage} resizeMode="cover" />
       <View style={styles.textContent}>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('Welcome')} title="Welcome" />
         <Text numberOfLines={1} style={styles.cardtitle}>
           Best Place
         </Text>
@@ -36,7 +37,7 @@ const MapCards = animation => (
       </View>
     </View>
     <View style={styles.card}>
-    <Image source={require('./img/pic2.png')} style={styles.cardImage}  />
+      <Image source={{ uri: 'https://i.imgur.com/N7rlQYt.jpg' }} style={styles.cardImage} resizeMode="cover" />
       <View style={styles.textContent}>
         <Text numberOfLines={1} style={styles.cardtitle}>
           Second Best Place
@@ -47,7 +48,7 @@ const MapCards = animation => (
       </View>
     </View>
     <View style={styles.card}>
-      <Image source={require('./img/pic3.png')} style={styles.cardImage}  />
+      <Image source={{ uri: 'https://i.imgur.com/UDrH0wm.jpg' }} style={styles.cardImage} resizeMode="cover" />
       <View style={styles.textContent}>
         <Text numberOfLines={1} style={styles.cardtitle}>
           Third Best Place
@@ -58,7 +59,7 @@ const MapCards = animation => (
       </View>
     </View>
     <View style={styles.card}>
-    <Image source={require('./img/pic4.png')} style={styles.cardImage}  />
+      <Image source={{ uri: 'https://i.imgur.com/Ka8kNST.jpg' }} style={styles.cardImage} resizeMode="cover" />
       <View style={styles.textContent}>
         <Text numberOfLines={1} style={styles.cardtitle}>
           Third Best Place

@@ -1,10 +1,12 @@
 import React from 'react';
-import MapView, { Marker, OverlayComponent } from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import { Image, Animated, View, TouchableOpacity, Button } from 'react-native';
 // import mapstyle from '../../../styles/mapstyles';
+import { withNavigation } from 'react-navigation';
 import styles from '../../../styles/homestyle';
+import CalloutView from './CalloutView';
 
-const Map = ({ userLatitude, userLongitude, setRef }) => (
+const Map = ({ userLatitude, userLongitude, setRef, navigation }) => (
   // const Images = [
   //    { uri: 'https://i.imgur.com/sNam9iJ.jpg' },
   //    { uri: 'https://i.imgur.com/N7rlQYt.jpg' },
@@ -55,6 +57,7 @@ const Map = ({ userLatitude, userLongitude, setRef }) => (
   //   latitudeDelta: 0.04864195044303443,
   //   longitudeDelta: 0.040142817690068,
   // };
+
   <MapView
     ref={setRef}
     provider={MapView.PROVIDER_GOOGLE}
@@ -95,7 +98,6 @@ const Map = ({ userLatitude, userLongitude, setRef }) => (
       }}
       title="Second Best Place"
       description="This is the second best place in Portland"
-      // image={require('./img/flower.jpeg')}
     >
       <Animated.View style={[styles.markerWrap]}>
         <Animated.View style={[styles.ring]} />
@@ -109,7 +111,6 @@ const Map = ({ userLatitude, userLongitude, setRef }) => (
       }}
       title="Third Best Place"
       description="This is the third best place in Portland"
-      // image={require('./img/flower.jpeg')}
     >
       <Animated.View style={[styles.markerWrap]}>
         <Animated.View style={[styles.ring]} />
@@ -123,7 +124,6 @@ const Map = ({ userLatitude, userLongitude, setRef }) => (
       }}
       title="Fourth Best Place"
       description="This is the fourth best place in Portland"
-      // image={require('./img/flower.jpeg')}
     >
       <Animated.View style={[styles.markerWrap]}>
         <Animated.View style={[styles.ring]} />
