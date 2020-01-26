@@ -1,5 +1,6 @@
 import { StyleSheet, Platform } from 'react-native';
 import '../global';
+import { Row } from 'native-base';
 
 const CARD_HEIGHT = global.height / 4;
 const CARD_WIDTH = CARD_HEIGHT - 50;
@@ -15,7 +16,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-  map: { ...StyleSheet.absoluteFill, flex: 1, zIndex: -1, elevation: 1, bottom:300 },
+  map: { ...StyleSheet.absoluteFillObject, flex: 1, zIndex: -1, elevation: 1, position: 'absolute', bottom: 300 },
 
   scrollView: {
     position: 'absolute',
@@ -39,15 +40,12 @@ export default StyleSheet.create({
     height: CARD_HEIGHT,
     width: CARD_WIDTH,
     overflow: 'hidden',
-    position: 'relative',
-    bottom:50,
   },
   cardImage: {
     flex: 3,
     width: '100%',
     height: '100%',
     alignSelf: 'center',
-    position: 'absolute',
   },
   textContent: {
     flex: 1,
@@ -101,4 +99,16 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(130,4,150, 0.5)',
   },
+  backgroundImage: {
+    width:'100%',
+    height:'100%',
+    position:'absolute',
+  },
+  mapButton: {
+    color:'black'
+  },
+  bookshelf:{
+    flexDirection:'row',
+  }
+
 });
