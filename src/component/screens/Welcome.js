@@ -17,13 +17,13 @@ export default class Welcome extends Component {
         
         <View style={styles.bookshelf}>
           <Button 
-          title="Open Book 1" onPress={() => this.props.navigation.navigate('Home')}
+          title="Open Book 1" onPress={() => this.props.navigation.navigate('BookOne')}
           style={styles.mapButton}
           /><Button 
-          title="Open Book 2" onPress={() => this.props.navigation.navigate('Home')}
+          title="Open Book 2" onPress={() => this.props.navigation.navigate('BookTwo')}
           style={styles.mapButton}
           /><Button 
-          title="Open Book 3" onPress={() => this.props.navigation.navigate('Home')}
+          title="Open Book 3" onPress={() => this.props.navigation.navigate('BookThree')}
           style={styles.mapButton}
           />
         </View>

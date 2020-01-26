@@ -7,6 +7,10 @@ import CustomDrawerComponent from './src/component/layout/Drawer';
 import MenuButton from './src/component/layout/MenuButton';
 import Home from './src/component/screens/Home';
 import Welcome from './src/component/screens/Welcome';
+import BookOne from './src/component/screens/BookOne';
+import BookTwo from './src/component/screens/BookOne';
+import BookThree from './src/component/screens/BookOne';
+
 
 import './global';
 import { HitTestResultTypes } from 'expo/build/AR';
@@ -64,6 +68,9 @@ const StackNavigation = createStackNavigator(
       },
     },
     Home: { screen: Home },
+    BookOne: { screen: BookOne },
+    BookTwo: { screen: BookTwo },
+    BookThree: { screen: BookThree },
     // Setting: { screen: Setting },
     // Test: { screen: TestPage },
   },
