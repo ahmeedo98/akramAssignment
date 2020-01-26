@@ -36,9 +36,9 @@ export default class Home extends Component {
     return (
       <View style={{ flex: 1 }}>
         <View style={styles.container}>
-          <MapCards animation={animation} index={index} />
+        <MapCards animation={animation} index={index} />
           {userLatitude && userLongitude && (
-            <Map userLatitude={userLatitude} userLongitude={userLongitude} setRef={this.setRef} />
+            <Map userLatitude={userLatitude} userLongitude={userLongitude} setRef={this.setRef}/>
           )}
         </View>
       </View>

@@ -15,7 +15,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-  map: { ...StyleSheet.absoluteFillObject, flex: 1, zIndex: -1, elevation: 1, position: 'absolute' },
+  map: { ...StyleSheet.absoluteFill, flex: 1, zIndex: -1, elevation: 1, bottom:300 },
 
   scrollView: {
     position: 'absolute',
@@ -39,12 +39,15 @@ export default StyleSheet.create({
     height: CARD_HEIGHT,
     width: CARD_WIDTH,
     overflow: 'hidden',
+    position: 'relative',
+    bottom:50,
   },
   cardImage: {
     flex: 3,
     width: '100%',
     height: '100%',
     alignSelf: 'center',
+    position: 'absolute',
   },
   textContent: {
     flex: 1,
