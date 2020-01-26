@@ -10,6 +10,7 @@ import Welcome from './src/component/screens/Welcome';
 import BookOne from './src/component/screens/BookOne';
 import BookTwo from './src/component/screens/BookOne';
 import BookThree from './src/component/screens/BookOne';
+import BookCarousel2 from './src/component/screens/BookCarousel2';
 
 
 import './global';
@@ -71,6 +72,7 @@ const StackNavigation = createStackNavigator(
     BookOne: { screen: BookOne },
     BookTwo: { screen: BookTwo },
     BookThree: { screen: BookThree },
+    BookCarousel2: { screen: BookCarousel2 },
     // Setting: { screen: Setting },
     // Test: { screen: TestPage },
   },

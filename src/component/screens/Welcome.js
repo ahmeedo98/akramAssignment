@@ -17,7 +17,7 @@ export default class Welcome extends Component {
         
         <View style={styles.bookshelf}>
           <Button 
-          title="Open Book 1" onPress={() => this.props.navigation.navigate('BookOne')}
+          title="Open Book 1" onPress={() => this.props.navigation.navigate('BookCarousel2')}
           style={styles.mapButton}
           /><Button 
           title="Open Book 2" onPress={() => this.props.navigation.navigate('BookTwo')}
