@@ -50,7 +50,7 @@ export default class BookCarousel2 extends Component {
   dotColor="white"
   inactiveDotColor="#90A4AE"
   paginationBoxVerticalPadding={20}
-  autoplay
+  //autoplay
   circleLoop
   resizeMethod={'resize'}
   resizeMode={'cover'}
