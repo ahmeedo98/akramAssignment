@@ -105,7 +105,7 @@ export default StyleSheet.create({
     position:'absolute',
   },
   mapButton: {
-    color:'black'
+    fontWeight:"400",
   },
   bookshelf:{
     flexDirection:'row',
