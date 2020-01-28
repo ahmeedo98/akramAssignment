@@ -20,7 +20,7 @@ export default class Welcome extends Component {
         {/* <Image source={require(background)} style={styles.backgroundImage} /> */}
         <Image
           style={styles.backgroundImage}
-          source={require("../img/bookshelf.jpg")}
+          source={require("../img/empty-bookshelf.jpg")}
         />
 
         <View style={styles.bookshelf}>
