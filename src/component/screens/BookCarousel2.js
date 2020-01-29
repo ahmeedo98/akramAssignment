@@ -16,11 +16,7 @@ export default class BookCarousel2 extends Component {
             require('../img/bookone-01.jpg'),
             require('../img/bookone-02.jpg'),
             require('../img/bookone-03.jpg'),
-            require('../img/bookone-04.jpg'),
-
-            require('../img/pic1.png'),
-            require('../img/pic2.png'),          
-            require('../img/pic3.png'),          
+            require('../img/bookone-04.jpg'),        
             require('../img/pic4.png'),          
             require('../img/pic5.png'),          
             require('../img/pic6.png'),          
@@ -44,37 +40,40 @@ export default class BookCarousel2 extends Component {
     render() {
         return (
         <View style={styles.container}>
+          <View styles={styles.slider}>
         <SliderBox
-  images={this.state.images}
-  sliderBoxHeight={750}
-  dotColor="white"
-  inactiveDotColor="#90A4AE"
-  paginationBoxVerticalPadding={20}
-  //autoplay
-  circleLoop
-  resizeMethod={'resize'}
-  resizeMode={'cover'}
-  paginationBoxStyle={{
-    position: "absolute",
-    bottom: 0,
-    padding: 0,
-    alignItems: "center",
-    alignSelf: "center",
-    justifyContent: "center",
-    paddingVertical: 10
-  }}
-  dotStyle={{
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    marginHorizontal: 0,
-    padding: 0,
-    margin: 0,
-    backgroundColor: "rgba(128, 128, 128, 0.92)"
-  }}
-  ImageComponentStyle={{borderRadius: 15, width: '97%', marginTop: 5}}
-  imageLoadingColor="#2196F3"
-/>
+          images={this.state.images}
+          sliderBoxHeight={400}
+          sliderBoxWidth={200}
+          dotColor="white"
+          inactiveDotColor="#90A4AE"
+          paginationBoxVerticalPadding={20}
+          //autoplay
+          circleLoop
+          resizeMethod={'resize'}
+          resizeMode={'cover'}
+          paginationBoxStyle={{
+            position: "absolute",
+            bottom: 0,
+            padding: 0,
+            alignItems: "center",
+            alignSelf: "center",
+            justifyContent: "center",
+            paddingVertical: 10
+          }}
+          dotStyle={{
+            width: 10,
+            height: 10,
+            borderRadius: 5,
+            marginHorizontal: 0,
+            padding: 0,
+            margin: 0,
+            backgroundColor: "rgba(128, 128, 128, 0.92)"
+          }}
+          ImageComponentStyle={{borderRadius: 15, width: '97%', marginTop: 5}}
+          imageLoadingColor="#2196F3"
+        />
+      </View>
       </View>
 
         );

@@ -5,7 +5,8 @@ import {
   Text,
   Button,
   Image,
-  ImageBackground
+  ImageBackground,
+  TouchableOpacity
 } from "react-native";
 import Map from "../layout/Map";
 import MapCards from "../layout/MapCards";
@@ -24,28 +25,37 @@ export default class Welcome extends Component {
         />
 
         <View style={styles.bookshelf}>
-          <Button
-            title="Open Book 1"
+        
+          <TouchableOpacity
+            style={styles.book1}
             onPress={() => this.props.navigation.navigate("BookCarousel2")}
-            style={styles.mapButton}
-          />
-          <Button
-            title="Open Book 2"
+          >
+            <Text style={styles.bookText}> Hollows of Heathrow, Hillingdon and Hayes </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.book2}
             onPress={() => this.props.navigation.navigate("BookCarousel2")}
-            style={styles.mapButton}
-          />
-          <Button
-            title="Open Book 3"
+          >
+            <Text style={styles.bookText}> Open Book 2 </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.book3}
             onPress={() => this.props.navigation.navigate("BookCarousel2")}
-            style={styles.mapButton}
-          />
+          >
+            <Text style={styles.bookText}> Open Book 3 </Text>
+          </TouchableOpacity>
+
         </View>
 
-        <Button
-          title="Go to Map"
-          onPress={() => this.props.navigation.navigate("Home")}
-          style={styles.mapButton}
-        />
+          <TouchableOpacity
+            style={styles.bookButton}
+            onPress={() => this.props.navigation.navigate("Home")}
+            >
+            <Text> Go to Map </Text>
+          </TouchableOpacity>
+        
       </View>
     );
   }

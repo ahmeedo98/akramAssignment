@@ -104,11 +104,51 @@ export default StyleSheet.create({
     height:'100%',
     position:'absolute',
   },
-  mapButton: {
-    fontWeight:"400",
+  book1: {
+    alignItems: 'center',
+    backgroundColor: '#31E981',
+    padding: 10,
+    margin: 10,
+    flex:1,
+    borderRadius:10,
+  },
+  book2: {
+    alignItems: 'center',
+    backgroundColor: '#00120B',
+    padding: 10,
+    margin: 10,
+    flex:1,
+    height:10,
+    borderRadius:10,
+
+  },
+  book3: {
+    alignItems: 'center',
+    backgroundColor: '#88B7B5',
+    padding: 10,
+    margin: 10,
+    flex:1,
+    borderRadius:10,
+
   },
   bookshelf:{
-    flexDirection:'row',
+    flex:20,
+  },
+  slider:{
+    flex: 1, 
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute', 
+  },
+  bookButton:{
+    flex:1,
+  },
+  bookText:{
+    color:'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize:22,
+    width:100,
   }
 
 });
