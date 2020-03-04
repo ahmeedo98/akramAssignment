@@ -106,33 +106,32 @@ export default StyleSheet.create({
   },
   book1: {
     alignItems: 'center',
-    backgroundColor: '#31E981',
+    backgroundColor: '#e20787',
     padding: 10,
-    margin: 10,
+    margin: 30,
     flex:1,
     borderRadius:10,
+    top:50,
   },
   book2: {
     alignItems: 'center',
-    backgroundColor: '#00120B',
+    backgroundColor: '#fe912a',
     padding: 10,
-    margin: 10,
+    margin: 30,
     flex:1,
-    height:10,
     borderRadius:10,
-
+    top:25,
   },
   book3: {
     alignItems: 'center',
-    backgroundColor: '#88B7B5',
+    backgroundColor: '#7c0700',
     padding: 10,
-    margin: 10,
+    margin: 30,
     flex:1,
     borderRadius:10,
-
+    bottom:10,
   },
   bookshelf:{
-    flex:20,
   },
   slider:{
     flex: 1, 
@@ -142,12 +141,17 @@ export default StyleSheet.create({
   },
   bookButton:{
     flex:1,
+    backgroundColor: 'white',
+    padding: 20,
+    flex:1,
+    borderRadius:10,
+    bottom:25,
   },
   bookText:{
     color:'white',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize:22,
+    fontSize:18,
     width:100,
   }
 

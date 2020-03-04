@@ -28,23 +28,23 @@ export default class Welcome extends Component {
         
           <TouchableOpacity
             style={styles.book1}
-            onPress={() => this.props.navigation.navigate("BookCarousel2")}
+            onPress={() => this.props.navigation.navigate("BookCarousel")}
           >
-            <Text style={styles.bookText}> Hollows of Heathrow, Hillingdon and Hayes </Text>
+            <Text style={styles.bookText}> The M25 </Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={styles.book2}
             onPress={() => this.props.navigation.navigate("BookCarousel2")}
           >
-            <Text style={styles.bookText}> Open Book 2 </Text>
+            <Text style={styles.bookText}> Visual Control Room </Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={styles.book3}
-            onPress={() => this.props.navigation.navigate("BookCarousel2")}
+            onPress={() => this.props.navigation.navigate("BookCarousel3")}
           >
-            <Text style={styles.bookText}> Open Book 3 </Text>
+            <Text style={styles.bookText}> Eleven  Windsocks for Brunel </Text>
           </TouchableOpacity>
 
         </View>

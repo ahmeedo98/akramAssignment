@@ -7,7 +7,10 @@ import CustomDrawerComponent from './src/component/layout/Drawer';
 import MenuButton from './src/component/layout/MenuButton';
 import Home from './src/component/screens/Home';
 import Welcome from './src/component/screens/Welcome';
+import BookCarousel from './src/component/screens/BookCarousel';
 import BookCarousel2 from './src/component/screens/BookCarousel2';
+import BookCarousel3 from './src/component/screens/BookCarousel3';
+
 
 
 import './global';
@@ -66,7 +69,10 @@ const StackNavigation = createStackNavigator(
       },
     },
     Home: { screen: Home },
+    BookCarousel: { screen: BookCarousel },
     BookCarousel2: { screen: BookCarousel2 },
+    BookCarousel3: { screen: BookCarousel3 },
+
     // Setting: { screen: Setting },
     // Test: { screen: TestPage },
   },
